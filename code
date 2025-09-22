@@ -1,0 +1,68 @@
+/* Matthew Ren
+ Classmate Program
+ 9/22/25
+ Software Design D2B2
+*/
+
+#include <iostream>
+#include <string>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    string argue1;
+    string argue2;
+    string argue3;
+    float cal;
+    int act;
+
+    cout << "hey twin how many calories burned today \n";
+    cin >> cal;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    if (cal > 100000) {
+        cout << "Physically impossible wyd. \n";
+        getline(cin, argue1);
+
+        if (argue1 == "Eating uranium\n") {
+            cout << "Liar.\n";
+            getline(cin, argue2);
+
+            if (argue2 == "I've kidnapped Adam and I've held him in an isolated location in the forest") {
+                cout << "\nkinda rude man\n";
+                cout << "that won't help you burn calories.\n";
+                cout << "I am legally unable to insult you for your actions but I will still condemn such behavior.\n\n";
+                getline(cin, argue3);
+
+                if (argue3 == "haha") {
+                    cout << "Your family is not safe.";
+                } else if (argue3 == "mb") {
+                    cout << "Good boy.";
+                } else {
+                    cout << "blah blah blah, don't laugh at me";
+                }
+            } else {
+                cout << "can you kidnap adam";
+            }
+        }
+    return 0;
+    } else if (cal > 2000) {
+    cout << "Good job, you've mEt requirements for the dAy. Gabriel, pay attenTion";
+}   else if ( cal < 2000) {
+    cout << "hey man yoU gotta buRn some more cAlories, i got a few suggestioNs.\n Try one of these followIng: \n1. Jogging 2. Biking 3. Basketball 4. Wrestling a bear.\n";
+    cin >> act;
+    cin.ignore();
+    if (act == 1) {
+        cout << "Jogging burns 100 calories per mile so at the rate yoU're going at, you need to jog " << (2000 - cal)/100 << " Miles to burn enough calories until requirements";
+    } else if (act == 2) {
+        cout << "Biking burns 50 to 60 calories a mile, so you'd need to bike around " << (2000-cal)/55 << " miles";
+    } else if (act == 3 ) {
+        cout << "A casual game of basketball burns 350 calories an hour and 750 if intensive so you need anywhere from " << (2000-cal)/350 << " hours or " << (2000-cal)/750 << " hours";
+    } else if (act == 5) {
+        cout << "Wrestling a bear usually kills you so you only need to wrestle one";
+    } else cout << "buddy that aint an option";
+} else if ( cal < 0) {
+    cout << "The government has removed this insult.";
+    }
+}
