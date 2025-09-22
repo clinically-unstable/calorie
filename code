@@ -26,7 +26,7 @@ int main() {
         getline(cin, argue1);
 
         if (argue1 == "Eating uranium\n") {
-            cout << "Liar.\n";
+            cout << "Liar. What do you have to say for yourself. ";
             getline(cin, argue2);
 
             if (argue2 == "I've kidnapped Adam and I've held him in an isolated location in the forest") {
